@@ -1,30 +1,30 @@
-import Typography from '@material-ui/core/Typography'
+import profilePic from "../Assets/Daniel.jpg"
 
 export default function About (){
 
-    return <><h1>ABOUT PAGE</h1>
-    <Typography paragraph>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua. Rhoncus dolor purus non enim praesent elementum
-          facilisis leo vel. Risus at ultrices mi tempus imperdiet. Semper risus in hendrerit
-          gravida rutrum quisque non tellus. Convallis convallis tellus id interdum velit laoreet id
-          donec ultrices. Odio morbi quis commodo odio aenean sed adipiscing. Amet nisl suscipit
-          adipiscing bibendum est ultricies integer quis. Cursus euismod quis viverra nibh cras.
-          Metus vulputate eu scelerisque felis imperdiet proin fermentum leo. Mauris commodo quis
-          imperdiet massa tincidunt. Cras tincidunt lobortis feugiat vivamus at augue. At augue eget
-          arcu dictum varius duis at consectetur lorem. Velit sed ullamcorper morbi tincidunt. Lorem
-          donec massa sapien faucibus et molestie ac.
-        </Typography>
-        <Typography paragraph>
-          Consequat mauris nunc congue nisi vitae suscipit. Fringilla est ullamcorper eget nulla
-          facilisi etiam dignissim diam. Pulvinar elementum integer enim neque volutpat ac
-          tincidunt. Ornare suspendisse sed nisi lacus sed viverra tellus. Purus sit amet volutpat
-          consequat mauris. Elementum eu facilisis sed odio morbi. Euismod lacinia at quis risus sed
-          vulputate odio. Morbi tincidunt ornare massa eget egestas purus viverra accumsan in. In
-          hendrerit gravida rutrum quisque non tellus orci ac. Pellentesque nec nam aliquam sem et
-          tortor. Habitant morbi tristique senectus et. Adipiscing elit duis tristique sollicitudin
-          nibh sit. Ornare aenean euismod elementum nisi quis eleifend. Commodo viverra maecenas
-          accumsan lacus vel facilisis. Nulla posuere sollicitudin aliquam ultrices sagittis orci a.
-        </Typography>
+    return <>
+    <div className="card mb-5 text-center mx-auto d-block" style={{width: "35rem"}}>
+      <h3 className="card-header">About Me</h3>
+      <div className="card-body">
+        <h5 className="card-title">Aspiring Web Developer</h5>
+        <h6 className="card-subtitle text-muted">Based out of Orange County, CA</h6>
+      </div>
+      <img style={{height: "250px", width: "45%", display: "block"}} src={profilePic} alt="Card image" className="mx-auto d-block img-fluid"/>
+      <div className="card-body">
+        <p className="card-text">[Placeholder for content here]</p>
+      </div>
+    </div>
+
+    {/* Social Media Card: Contains links to connect with me */}
+    <div className="card">
+      <div className="card-body">
+        <h4 className="card-title">Social Media</h4>
+        <h6 className="card-subtitle mb-2 text-muted">Let's Connect!</h6>
+        <p className="card-text">Feel encouraged to reach out via any of the following social media platforms. I am eager to find out how I can help with any projects!</p>
+        <a href="https://github.com/dfigueroa7007" className="card-link" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/danielffigueroa/" className="card-link" target="_blank">LinkedIn</a>
+        <a href="https://twitter.com/Dan_Aye_" className="card-link" target="_blank">Twitter</a>
+      </div>
+    </div>
     </>
 }
